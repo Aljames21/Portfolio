@@ -141,5 +141,5 @@ section{
 
 .home-img img{
     width: 32vw;
-   
+    border-radius: 100%;
 }
