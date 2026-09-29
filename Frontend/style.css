@@ -327,9 +327,9 @@ section{
 
 .projects-box{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-items: center;
-    gap: 4.5rem;
+    gap: 3rem;
     row-gap: 5rem;
 }
 
@@ -342,12 +342,12 @@ section{
     background-color: var(--bg-color);
     border: 2px solid var(--main-color);
     border-radius: 3rem;
-    gap: 1rem;
+    gap: 2rem;
     padding: 5rem 2rem;
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 5px var(--main-color);
-    transition: 1.1 ease;
+    transition: 0.3s ease;
 }
 
 .project-card:hover{
