@@ -2,10 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-align: none;
+    text-decoration: none;
     scroll-behavior: smooth;
     font-family: "Poppins";
-    text-decoration: none;
 }
 
 :root{
@@ -49,8 +48,7 @@ body{
     color: var(--text-color);
     font-weight: 600;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
-    text-decoration: none;  
+    transition: 0.3s ease-in-out; 
 }
 
 .logo:hover{
@@ -173,3 +171,28 @@ section{
     transform: scale(1.2)translateY(-5px);
     box-shadow: 0 0 25px var(--main-color);
 }
+
+.btn-group{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    color: black;  
+    border: 2px solid transparent;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color); 
+} 
+
