@@ -1,0 +1,45 @@
+/*Top*/
+header{
+background-color: #ffffff;
+justify-content: space-between;
+padding: 10px 50px 20px;
+position: sticky;
+text-align: left;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    font-size: 16;
+    background-color: rgb(73, 11, 11);
+    padding: 20px;
+
+    li{
+    border: 10px solid lightgoldenrodyellow;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+    color: antiquewhite;
+    }
+    a{
+    text-decoration: none;
+    color: #fde491;
+    }
+}
+
+body{
+    h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f03737;;
+    }
+ 
+}
+
+
+
+/*Fonts for paragraphs*/
+
+

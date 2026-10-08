@@ -1,0 +1,149 @@
+*{
+    font-family:Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+header{
+    background-color: #0F172B;
+    color: #d1d5db;
+    text-align: center;
+    padding: 30px;
+}
+
+nav{
+    background-color:#335fd8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+
+    a{
+        text-decoration: none;
+        color: rgb(255, 213, 24);
+        font-weight: bold;
+    }   
+}
+
+nav a:hover{
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.2);
+    transition: 0.1s;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+
+    transition: ease 0.3s;
+}
+
+.container hover{
+    
+}
+
+section{
+    flex: 3;
+    background:#fff8dc;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,.2);
+}
+
+aside{
+    flex:1;
+    background:aquamarine;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,.2);
+}
+
+footer{
+    text-align: center;
+    background-color: #0F172B;
+    color: #d1d5db;
+    padding: 20px;
+}
+
+.forms{
+     background:#fff;
+     width: 60%;
+     padding:20px;
+     border-radius:10px;
+     margin:auto;
+     box-shadow:0 2px 6px rgba(0,0,0,.2);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border: 1px solid #151313;
+    background-color: #f9f9f9;
+    border-collapse: collapse;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+
+th, td {
+    border: 1px solid #151313;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+th{
+    background-color: #081b4b;
+    color: #d1d5db;
+}
+
+th:hover{
+    background-color: #0051e6;
+    transform: scale(1.1);
+    transition: 0.1ms;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+tr:hover{
+    background:#dff4ff;
+}
+
+.profile{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+}
+
+.avatar{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    background:#faf3f3;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;}
+
+/* Responsive Design */
+@media screen and (max-width: 425px) {
+	
+.links{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    font-size: 25px;
+}
+
+.main-container{
+    flex-direction:column;
+}
+	
+}
