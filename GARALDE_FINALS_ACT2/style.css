@@ -1,0 +1,18 @@
+body{
+            text-align: center;
+            margin-top: 70px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+button{
+            background-color: rgb(44, 142, 245);
+            color: white;
+            border: none;
+            padding: 25px 25px;
+            border-radius: 25px;
+        }
+
+#message{
+ font-weight: bold;
+ font-size: 34px;
+}
