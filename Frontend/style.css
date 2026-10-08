@@ -138,10 +138,11 @@ section{
 }
 
 .home-img img{
-    width: 32vw;
+    width: 28vw;
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease-in-out;
-}
+    border-radius: 100%;
+}   
 
 .home-img img:hover{
     box-shadow: 0 0 25px var(--main-color),
@@ -217,8 +218,8 @@ section{
 }
 
 .about-img img{
-    width: 32vw;
-    border: 50%;
+    width: 28vw;
+    border-radius: 100%;
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease-in-out;
 }
