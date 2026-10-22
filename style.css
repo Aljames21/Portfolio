@@ -109,7 +109,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15rem;
+    gap: 6rem;
 }
 
 .home-content{
@@ -209,20 +209,31 @@ section{
     color: black;
 }
 
-.about{
+
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
+    gap: 6rem;
     background-color: var(--second-bg-color);
 }
 
-.about-img img{
+.about-img {
+    flex: 0 0 auto;
+}
+
+.about-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-img img {
     width: 28vw;
     border-radius: 100%;
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease-in-out;
 }
+
 
 .about-img img:hover{
     box-shadow: 0 0 25px var(--main-color),
@@ -326,13 +337,15 @@ section{
     background-color: var(--second-bg-color);
 }
 
-.projects-box{
+
+.projects-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
     place-items: center;
-    gap: 20rem;
+    column-gap: 3rem;
     row-gap: 3rem;
 }
+
 
 .project-card{
     display: flex;
@@ -370,6 +383,7 @@ section{
 .project-card p{
     font-size: 1.6rem;
 }
+
 
 
 /* =========================
@@ -532,8 +546,9 @@ section{
     }
 
     .home-img img {
-        width: min(65vw, 280px);
+        width: min(80vw, 350px);
         max-width: 100%;
+        height: auto;
     }
 
     .social-icons a {
@@ -554,8 +569,9 @@ section{
     }
 
     .about-img img {
-        width: min(60vw, 250px);
+        width: min(75vw, 320px);
         max-width: 100%;
+        height: auto;
     }
 
     .about-content h2 {
