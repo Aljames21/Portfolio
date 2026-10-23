@@ -29,3 +29,30 @@ if (menuIcon && navbar) {
         }
     });
 }
+
+
+const contactForm = document.querySelector("#contact-form");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.querySelector("#contact-name").value.trim();
+        const email = document.querySelector("#contact-email").value.trim();
+        const subject = document.querySelector("#contact-subject").value.trim();
+        const message = document.querySelector("#contact-message").value.trim();
+
+        const recipient = "jrgaralde123@gmail.com";
+
+        const body =
+            `Name: ${name}\n` +
+            `Email: ${email}\n\n` +
+            `Message:\n${message}`;
+
+        const mailtoLink =
+            `mailto:${recipient}?subject=${encodeURIComponent(subject)}` +
+            `&body=${encodeURIComponent(body)}`;
+
+        window.location.href = mailtoLink;
+    });
+}
